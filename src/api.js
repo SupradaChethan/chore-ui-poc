@@ -1,4 +1,4 @@
-const API_BASE = 'http://localhost:8080/api/v1'
+const API_BASE = 'https://chore-service-poc-cde6cwf7c4gee0hx.canadacentral-01.azurewebsites.net/api/v1'
 
 // User API calls
 export const userAPI = {
