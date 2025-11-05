@@ -51,9 +51,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_69EA71D771984A14A37B4DD237744E98 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_23D9BC63A6D246AB8B12C004F44F3514 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_F9BB4A5E42D44F23B3339A2DCE5F53B5 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_7782DCC0D7DF43719108731A8FA6566F }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_C3301A198F684B6DBBA966A73ED9FF48 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_E7735A59764945DE9756811E4540D1B9 }}
 
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
@@ -61,7 +61,5 @@ jobs:
         with:
           app-name: 'chore-ui-poc'
           slot-name: 'Production'
-          package: './dist'
-
+          package: .
           
-
